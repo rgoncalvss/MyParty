@@ -20,7 +20,7 @@ If you don't want to use your root credentials to test the project, you can crea
 ## Creating a new user on our MongoDB container
 
 ```shell
-### Creating a database called myparty and an User that can only Read and Write on it
+### Creating a database and a User that can only Read and Write on it
 docker exec -it MONGO_CONTAINER_NAME `
     mongosh --host localhost -u CONFIG_MONGODB_ADMINUSERNAME -p CONFIG_MONGODB_ADMINPASSWORD --authenticationDatabase admin `
     --eval "db.getSiblingDB('DB_NAME').createUser({user: 'USERNAME', pwd: 'USER_PASSWORD', roles: [{role: 'readWrite', db: 'DB_NAME'}]})"
