@@ -1,3 +1,5 @@
+## Project with the ideia to train my skills on building an RESTful API
+
 ## Criando um novo usuário no MongoDB dockerizado
 
 ```shell
