@@ -4,7 +4,7 @@ If you want to test the project by yourself, clone this to your machine and run:
 ```
 npm i
 ```
-To become more familiar with Docker, I've created the MongoDB instance with it. If you want to do the same, go to Docker and install Docker Desktop.
+To become more familiar with Docker, I've created the MongoDB instance with it. If you want to do the same, go to [Docker](https://www.docker.com/products/docker-desktop/) and install Docker Desktop.
 
 In the repository, you will find a docker-compose file. Access the project folder in your terminal and run:
 ```
