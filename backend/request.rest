@@ -1,0 +1,103 @@
+//Services Test
+POST http://localhost:5000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 20,
+    "image": "teste"
+}
+
+###
+GET http://localhost:5000/api/services
+
+
+###
+GET http://localhost:5000/api/services/64be7d97b97cc840bb1e44f3
+
+
+###
+DELETE http://localhost:5000/api/services/64bfcd88d8f42e2a5e0e3121
+
+###
+PUT http://localhost:5000/api/services/64bffac7212a6d11dee28cea
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 4",
+    "description": "Alguma descrição 3",
+    "price": 20000,
+    "image": "teste"
+}
+###
+//Party Test
+POST http://localhost:5000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Projeto X 2",
+    "author": "McLovin",
+    "description": "An unforgetable party!",
+    "budget": 1000000,
+    "image": "teste",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 200,
+            "image": "teste"
+        }
+    ]
+}
+
+###
+GET http://localhost:5000/api/parties
+
+###
+GET http://localhost:5000/api/parties/64c2591d6188bf4eb3835b16
+
+###
+DELETE http://localhost:5000/api/parties/64c0073172b49b494f2df98a
+
+###
+
+PUT http://localhost:5000/api/parties/64c2591d6188bf4eb3835b16
+Content-Type: application/json
+
+{
+    "title": "Projeto X 2",
+    "author": "McLovin",
+    "description": "An unforgetable party!",
+    "budget": 100000,
+    "image": "teste",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 200,
+            "image": "teste"
+        }
+    ]
+}
+
+###
+//Users Test
+###
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+  "name": "Rafael Carolino",
+  "email": "teste1234@gmail.com",
+  "password": "teste123"
+}
+
+###
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "teste1234@gmail.com",
+  "password": "teste123"
+}
