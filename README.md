@@ -1,4 +1,4 @@
-# Project with the ideia to train my skills on building an **RESTful API**
+# Project with the ideia to train my skills on building a **RESTful API**
 
 If you want to test the project by yourself, clone this to your machine and run:
 ```
